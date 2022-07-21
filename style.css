@@ -15,7 +15,6 @@ body {
   gap: 24px;
   margin-top: 50px;
   margin-left: 90px;
-  margin-right: 140px;
   border-radius: 10px;
 }
 
@@ -29,7 +28,7 @@ body {
 h1 {
   font-family: "Poppins", sans-serif;
   color: #ffffff;
-  font-size: 60px;
+  font-size: 70px;
   margin-bottom: 0px;
 }
 
@@ -43,10 +42,10 @@ h1 {
   width: 581px;
   height: 613px;
   padding-top: 33px;
-  padding-right: 80px;
+  padding-right: 50px;
 }
 
-a {
+.button a {
   text-decoration: none;
   color: #ffffff;
   background-color: brown;
@@ -71,10 +70,8 @@ a {
 }
 
 .feature-button {
-  display: block;
   width: 252px;
   height: 252px;
-
   margin-top: 50px;
 }
 .feature-button div {
@@ -84,14 +81,19 @@ a {
   width: 252px;
   height: 40px;
   padding-left: 30px;
-  padding-right: 30px;
 }
-.feature-button div a {
+.feature-button a {
   font-size: 15px;
   text-align: center;
   background-color: #ffffff;
-
   color: #161616;
+  padding: 15px 15px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.btn3 a {
+  background-color: #dd0000;
+  color: #ffffff;
 }
 /* Feature-Button  End */
 
@@ -138,6 +140,8 @@ a {
   padding: 10px 20px;
   border: 1px solid #161616;
   color: #161616;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 /* feature End */
@@ -158,9 +162,112 @@ hr {
 .footer-link {
   display: flex;
   position: absolute;
+  gap: 20px;
   top: 200px;
-  left: 300px;
+  left: 400px;
 }
+
 .footer-link a {
-  background-color: transparent;
+  text-decoration: none;
+  color: white;
+}
+
+.social-media {
+  display: flex;
+  position: absolute;
+  top: 300px;
+  left: 47%;
+  gap: 20px;
+}
+
+.social-media a {
+  font-size: 25px;
+  color: #ffffff;
+}
+
+/* ------------------------------------
+------------For Tablet ---------------*/
+
+/* Medium devices (tablets, 768px) */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .container {
+    width: 850px;
+    margin: 0 auto;
+  }
+  .header h1 {
+    height: 300px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+    font-size: 55px;
+  }
+  .marcelo img {
+    padding-top: 162px;
+    padding-left: 40px;
+    width: 75%;
+    height: 75%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .feature-button div a {
+    filter: drop-shadow(0 0 0.1rem #161616);
+    position: relative;
+    top: 0px;
+  }
+  .feature-button div {
+    position: absolute;
+    display: flex;
+    /* flex-direction: row; */
+    top: -100px;
+  }
+
+  .feature-option {
+    background-color: transparent;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    position: relative;
+    left: -350px;
+    top: -250px;
+    width: 357px;
+    height: 414.21px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  body {
+    height: 3000px;
+    width: 1000px;
+    margin-left: 0;
+  }
+  .goal {
+    position: relative;
+    top: 1900px;
+  }
+
+  .footer-link {
+    left: 300px;
+    top: 130px;
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(3, 10px);
+    column-gap: 100px;
+    row-gap: 60px;
+  }
+  hr {
+    position: absolute;
+    top: -30px;
+    width: 50%;
+    left: 200px;
+  }
+
+  .social-media {
+    top: 300px;
+    left: 40%;
+    gap: 20px;
+  }
 }

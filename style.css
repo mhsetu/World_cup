@@ -105,6 +105,10 @@ h1 {
   top: 0px;
 }
 
+.view-all a {
+  visibility: hidden;
+}
+
 .feature {
   filter: drop-shadow(0 0 0.1rem #161616);
   display: flex;

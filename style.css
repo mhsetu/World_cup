@@ -235,6 +235,17 @@ hr {
     width: 357px;
     height: 414.21px;
   }
+    .view-all a {
+    visibility: visible;
+    position: absolute;
+    left: 480px;
+    top: 2480px;
+    text-decoration: none;
+    background-color: #dd0000;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
